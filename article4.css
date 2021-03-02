@@ -1,0 +1,348 @@
+
+/* hide scrollbar */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+.frontimg :hover {z-index:9999;}
+
+.scroll-info, header {
+  position: absolute;
+  left: 1rem;
+}
+
+/*nav */
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.topnav a {
+  float: right;
+  color: #bababa;
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: none;
+  color: #000000;
+}
+
+.topnav a.active {
+  color: #4166f5;
+}
+
+/* Back arrow */
+
+.button {
+  width: 17px;
+  height: 17px;
+  position: fixed;
+  border: solid #bababa;
+  border-width: 0 5px 5px 0;
+  z-index: 1;
+  display: inline-block;
+  margin: 25px;
+}
+
+.button:hover {
+  border: solid #4166f5;
+  border-width: 0 5px 5px 0;
+
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+header {
+  bottom: 1rem;
+}
+.scroll-info {
+  top: 1rem;
+}
+
+body {
+  font-family: Hepta Slab, sans-serif;
+  font-weight: 500;
+  background: #ffffff;
+}
+* {
+  box-sizing: content-box;
+}
+h1 {
+  font-family: Hepta Slab, sans-serif;
+  font-weight: 500;
+  font-size: 25pt;
+  color: #000000;
+  position: relative;
+  text-align: center;
+}
+
+h2 {
+  font-family: Hepta Slab, sans-serif;
+  font-weight: 300;
+  font-size: 16pt;
+  color: #27b3e7;
+  position: relative;
+  text-align: left;
+}
+
+h3 {
+  font-family: Hepta Slab, sans-serif;
+  font-weight: 100;
+  font-size: 12pt;
+  line-height: 1.2;
+  color: #585858;
+  position: relative;
+  text-align: left;
+}
+
+h4 {
+  font-family: Hepta Slab, sans-serif;
+  font-weight: 100;
+  font-size: 100%;
+  line-height: 1.2;
+  margin: 0% 3% 3% 3%;
+  color: #585858;
+  position: relative;
+  text-align: left;
+}
+
+h5 {
+  font-family: Hepta Slab, sans-serif;
+  font-weight: 500;
+  font-size: 30pt;
+  padding:4.7% 1%;
+  color: #000000;
+  position: relative;
+  text-align: center;
+}
+
+h6 {
+  font-family: Hepta Slab, sans-serif;
+  font-weight: 100;
+  font-size: 100%;
+  line-height: 1.5;
+  margin-top: 1%;
+  color: #585858;
+  position: relative;
+  text-align: left;
+}
+
+h7, h8, h9 { /* You can just go on adding headings */
+  display: block; /* Because this is block level element */
+}
+
+h7 {
+  font-family: Hepta Slab, sans-serif;
+  font-weight: 100;
+  font-size: 100%;
+  line-height: 1.2;
+  margin: 0% 3% 3% 3%;
+  color: #585858;
+  position: relative;
+  text-align: center;
+}
+
+.line {
+  border: 1px solid #4166f5;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.text-box {
+  width:80vw;
+  height: auto;
+  position: center; 
+}
+
+.text-box2 {
+  width: 36vw;
+  height: auto;
+  padding: 0% 2% 0% 2%;
+  position: center; 
+}
+
+.text-box3 {
+  width: 24vw;
+  height: auto;
+  padding: 0% 2% 0% 2%;
+  position: center; 
+}
+
+.item-a {
+  width: 70vw;
+  height: 20vw;
+  position: relative;
+  margin: auto;
+  margin-bottom: 6.5%;
+  top: 75px;
+  padding: 2rem;
+  background-color: #cccccc;
+  }
+
+  .logo {
+    width: 15%;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    justify-content: center;  
+}
+
+.title-box1 {
+  height: auto;
+  margin-top: 6%;
+  position: relative;
+}
+.title-box2 {
+  height: auto;
+  margin-top: 5%;
+  position: relative;
+}
+  .description-box {
+    width: 75vw;
+    height: auto;
+    position: relative; 
+    margin: 5% 13% 5% 13%;
+
+  }
+
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); /* everything else? */
+  }
+
+  .container {
+    overflow:hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+
+  .justify-content-center {
+    justify-content: center !important;
+  }
+
+  .img {
+    image-rendering: -webkit-pixelated;
+  }
+  /*image-rendering: -moz-crisp-edges;         /* Firefox */
+ /*image-rendering:   -o-crisp-edges;         /* Opera */
+ /*image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+ /*image-rendering: crisp-edges;
+ -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+
+  .img-wrap {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(0deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+    transition: 1s;
+    z-index: 5;
+  }
+  .img-wrap-horizontal {
+    width: 100%;
+    height: 35%;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(0deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+    transition: 1s;
+    z-index: 5;
+  }
+
+  .img-wrap-vertical {
+    flex-basis: 30%;
+    width: 30%;
+    height: auto;
+    display:flex;
+    align-items:normal;
+    justify-content: center;
+    transition:1.3s;
+    z-index:3;
+  }
+
+  .img-wrap-web {
+    width: 60%;
+    height: 50%;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: 80% 50%;
+    transform: rotate(0deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+    transition: 1s;
+    z-index: 3;
+    box-shadow: 10px 10px 10px #00000052;
+  }
+
+  .img-arrow {
+      width: 50%;
+      height: 35%;
+      transform: rotate(90deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform-origin: 80% 50%;
+      transform: rotate(0deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+      transition: 1s;
+      z-index: 5;
+   }
+
+  .img-wrapper a {
+    overflow: hidden;
+    display: contents;
+    padding: 1vh ;
+    box-shadow: 0 10px 50px #263984c7;
+  }
+  
+  .img-wrapper-web a {
+    overflow: hidden;
+    display: contents;
+    padding: 1vh ;
+    box-shadow: 0 10px 50px #263984c7;
+  }
+
+  .grid-wrapper {
+		display: grid;
+    grid-gap: 3vw;
+		grid-template-columns: [col-start] 7%[col1-start] 35%  [col2-start] 40%  [col2-end] 9%   ;
+		grid-template-rows: [row1-start]20% [row2-start] auto [row2-end];
+  height: 60vw;
+	}
+
+	.grid {
+		padding: 1%;
+  }
+  
+  .a {
+  	justify-content:center;
+  	    align-items:center;
+		grid-column: col1-start / col2-start;
+		grid-row: row1-start ;
+	}
+	.b {
+		grid-column: col2-start /col2-end ;
+		grid-row: row1-start / row2-end;
+	}
+	.c {
+		grid-column: col1-start / col2-start;
+		grid-row: row2-start / row2-end ;
+  }
+
+

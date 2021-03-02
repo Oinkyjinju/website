@@ -1,0 +1,95 @@
+
+
+#sliderFrame1, #sliderFrame1 div {
+    box-sizing: content-box;
+}
+#sliderFrame1 
+{
+    position:relative;
+    width:720px;
+    margin:0 auto; /*center-aligned*/
+    padding:20px;
+    background:none;
+    border-radius:6px;
+} 
+
+#slider1, #slider1 .sliderInner {
+    width:700px;height:400px;/* Must be the same size as the slider images */
+    border-radius:0px;
+}
+
+#slider1 {
+    background-color:rgb(255, 255, 255);
+    position:relative;
+    margin:0 auto; /*center-aligned*/
+    transform: translate3d(0,0,0);
+}
+
+/* the link style (if an image is wrapped by a link) */
+#slider1 a.imgLink, #slider1 .video {
+    z-index:2;
+    cursor:pointer;
+    position:absolute;
+    top:0px;left:0px;border:0;padding:0;margin:0;
+    width:100%;height:100%;
+}
+#slider1 .video {
+    background:transparent url(video.png) no-repeat 50% 50%;
+}
+
+/* Caption styles */
+#slider1 .mc-caption {
+    position:absolute;
+    width:500px;
+    height:auto;
+    padding:10px 0;
+    left: 100px; /*if the caption needs to be aligned from right, specify by right instead of left. i.e. right:20px;*/
+    bottom: -40px;/*if the caption needs to be aligned from top, specify by top instead of bottom. i.e. top:150px;*/
+    overflow:hidden;
+    font:bold 13px/16px Arial;
+    color:#000;
+    text-align:center;
+    background:none;
+}
+#slider1 .mc-caption a { 
+    color:#34739c;
+}
+
+
+/* ------ built-in navigation bullets wrapper that is relative to the #slider ------*/
+#slider1 .navBulletsWrapper  {
+    display:none;
+}
+
+/* --------- Others ------- */
+
+#slider1 img, #slider1>b, #slider1 a>b {
+    position:absolute; border:none; display:none;
+}
+
+#slider1 .sliderInner {
+    overflow:hidden;
+    position:absolute; top:0; left:0;
+}
+
+#slider1x>a, #slider1 video, #slider1 audio {display:none;}
+
+
+/* -- thumbnails -- */
+#thumbs1 
+{
+    margin-top:5%;
+    text-align:center;
+    font-size:0;
+}
+#thumbs1 .thumb1 
+{
+    display:inline-block;
+    *display:inline;zoom:1;/*IE6, IE7 hack*/
+    margin:0 0.3vw;/*this determins the distance between each thumbnail*/
+    background:#ffffff;
+}
+
+#thumbs1 .thumb1 img{ cursor:pointer; width:78px; height:35px; opacity:0.5;filter:alpha(opacity=50);}
+#thumbs1 .thumb-on img{ opacity:1;filter:alpha(opacity=100);}
+#slider div {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
